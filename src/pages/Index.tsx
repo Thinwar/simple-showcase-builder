@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import ProjectsSection from "@/components/ProjectsSection";
 
 const Index = () => {
   return (
+    <>
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-background px-6">
       {/* Decorative accent circle */}
       <div className="pointer-events-none absolute -top-32 right-[-10%] h-[500px] w-[500px] rounded-full bg-primary/10 blur-3xl" />
@@ -19,13 +21,17 @@ const Index = () => {
           Designer, developer &amp; creative thinker crafting digital experiences that matter.
         </p>
         <div className="mt-10">
-          <Button size="lg" className="gap-2 rounded-full px-8 text-base">
-            View My Projects
-            <ArrowRight className="h-4 w-4" />
+          <Button size="lg" className="gap-2 rounded-full px-8 text-base" asChild>
+            <a href="#projects">
+              View My Projects
+              <ArrowRight className="h-4 w-4" />
+            </a>
           </Button>
         </div>
       </div>
     </section>
+    <ProjectsSection />
+    </>
   );
 };
 
