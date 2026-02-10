@@ -1,13 +1,31 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-background px-6">
+      {/* Decorative accent circle */}
+      <div className="pointer-events-none absolute -top-32 right-[-10%] h-[500px] w-[500px] rounded-full bg-primary/10 blur-3xl" />
+      <div className="pointer-events-none absolute bottom-[-15%] left-[-5%] h-[400px] w-[400px] rounded-full bg-primary/5 blur-3xl" />
+
+      <div className="relative z-10 max-w-2xl text-center">
+        <p className="mb-4 text-sm font-medium uppercase tracking-[0.25em] text-muted-foreground">
+          Welcome
+        </p>
+        <h1 className="font-display text-5xl leading-tight tracking-tight text-foreground sm:text-7xl">
+          Your Name
+        </h1>
+        <p className="mx-auto mt-6 max-w-md text-lg text-muted-foreground">
+          Designer, developer &amp; creative thinker crafting digital experiences that matter.
+        </p>
+        <div className="mt-10">
+          <Button size="lg" className="gap-2 rounded-full px-8 text-base">
+            View My Projects
+            <ArrowRight className="h-4 w-4" />
+          </Button>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
