@@ -13,7 +13,7 @@ const Index = () => {
           Welcome
         </p>
         <h1 className="font-display text-5xl leading-tight tracking-tight text-foreground sm:text-7xl">
-          Your Name
+          Warren Ndegwa Thinwa
         </h1>
         <p className="mx-auto mt-6 max-w-md text-lg text-muted-foreground">
           Designer, developer &amp; creative thinker crafting digital experiences that matter.
